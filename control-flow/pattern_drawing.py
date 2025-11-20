@@ -26,3 +26,4 @@ while row < size:
    
     print()
     row += 1
+ 
