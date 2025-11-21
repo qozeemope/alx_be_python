@@ -2,18 +2,21 @@ from datetime import datetime, timedelta
 
 def display_current_datetime () :
     current = datetime.now()
-    current_date = current.date()
+    # current_date = current.datetime()
 
-    year = current.strftime("%Y")
-    month = current.strftime("%m")
-    day = current.strftime("%d")
-    hour = current.strftime("%H")
-    minute = current.strftime("%M")
-    sec = current.strftime("%S")
+    # year = current.strftime("%Y")
+    # month = current.strftime("%m")
+    # day = current.strftime("%d")
+    # hour = current.strftime("%H")
+    # minute = current.strftime("%M")
+    # sec = current.strftime("%S")
 
     # print(day)
 
-    print(f"Current date and time: {year}-{month}-{day} {hour}:{minute}:{sec}")
+
+
+    print(f"Current date and time: {current.strftime('%Y-%m-%d %H:%M:%S')}")
+
 
 display_current_datetime()
 
