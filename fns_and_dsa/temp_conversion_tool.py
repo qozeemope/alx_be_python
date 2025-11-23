@@ -11,7 +11,11 @@ def convert_to_fahrenheit(celsius) :
     return temp_fahrenheit
 
 
-convert_temp = int(input("Enter the temperature to convert: "))
+convert_temp_input = input("Enter the temperature to convert: ")
+if not convert_temp_input.isnumeric():
+    print("Invalid temperature. Please enter a numeric value.")
+    exit()
+convert_temp = int(convert_temp_input)
 
 temp_unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ") 
 
