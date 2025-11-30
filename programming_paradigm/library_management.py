@@ -4,13 +4,13 @@ class Book:
         self.author = author
         self.__is_checked_out = is_checked_out
 
-    def check_out (self):
+    def check_out(self):
         self.__is_checked_out = True
     
-    def return_book (self):
+    def return_book(self):
         self.__is_checked_out = False
     
-    def is_available (self) :
+    def is_available(self) :
         return not self.__is_checked_out
     
 class Library:
@@ -18,7 +18,7 @@ class Library:
         self._books = []
        
 
-    def add_book (self, book):
+    def add_book(self, book):
         self._books.append(book) 
     
     def check_out_book(self, title):
